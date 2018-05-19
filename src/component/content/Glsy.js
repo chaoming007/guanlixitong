@@ -2,7 +2,7 @@
  * @Author: chaoming007@163.com 
  * @Date: 2018-05-19 11:17:51 
  * @Last Modified by: chaoming007@163.com
- * @Last Modified time: 2018-05-19 11:56:43
+ * @Last Modified time: 2018-05-19 13:31:40
  */
 import React,{ Component} from 'react'
 import { Link} from 'react-router-dom'
@@ -15,7 +15,6 @@ export default class Glsy extends Component{
     
     render(){
         let {match}=this.props;
-        console.log(match)
 
         return <div>
             管理首页
