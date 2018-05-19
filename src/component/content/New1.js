@@ -2,7 +2,7 @@
  * @Author: chaoming007@163.com 
  * @Date: 2018-05-19 11:17:44 
  * @Last Modified by: chaoming007@163.com
- * @Last Modified time: 2018-05-19 14:02:42
+ * @Last Modified time: 2018-05-19 14:22:03
  */
 import React,{ Component} from 'react'
 import Request from '../../util/request'
@@ -21,7 +21,7 @@ export default class New1 extends Component{
     componentDidMount() {
         Request.get("https://cnodejs.org/api/v1/topics").then((dat)=>{
             this.setState({
-                load:false
+                //load:false
             })
             console.log(dat)
         })
