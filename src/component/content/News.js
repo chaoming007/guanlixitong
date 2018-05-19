@@ -1,3 +1,9 @@
+/*
+ * @Author: chaoming007@163.com 
+ * @Date: 2018-05-19 11:17:33 
+ * @Last Modified by:   chaoming007@163.com 
+ * @Last Modified time: 2018-05-19 11:17:33 
+ */
 import React,{ Component} from 'react'
 import { Route,Switch,BrowserRouter,NavLink} from 'react-router-dom'
 import RoutesContent from '../router/RouterContent'
