@@ -87,6 +87,8 @@ a:hover { color: #cc0000;  text-decoration: none; }
 .account-box li{ overflow: hidden; margin: 0 0 30px}
 .account-box .tit{ display: block; width: 200px; font-weight: bold; float: left; height: 40px; text-align: right; line-height: 40px;}
 .account-box .inp-warp{ float: left; height: 40px; }
+.account-box .send-yzm{ float: left; height:40px ; }
+.account-box .send-yzm .btn-sty{ width: 100px; margin: 0 0 0 20px}
 .account-box .username-box{line-height: 40px;height: 40px; width: 300px; display: block}
 .account-box .inp-sty{ vertical-align: middle;height: 40px; width: 300px; display: block}
 .account-box .inp-warning{ border: 1px solid #cc0000}

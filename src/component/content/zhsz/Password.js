@@ -2,7 +2,7 @@
  * @Author: chaoming007@163.com 
  * @Date: 2018-05-19 11:17:56 
  * @Last Modified by: chaoming007@163.com
- * @Last Modified time: 2018-05-23 20:01:30
+ * @Last Modified time: 2018-05-23 20:10:36
  */
 import React,{ Component} from 'react'
 import { Input ,Tooltip} from 'antd'
@@ -13,7 +13,7 @@ class Password extends Component{
     constructor(props) {
         super(props)
         this.state={
-            yzmControl:true,
+            yzmControl:false,
             passwordControl:false,
             cpasswordControl:false
         }
@@ -33,6 +33,9 @@ class Password extends Component{
                     <Tooltip title="验证码错误" placement={"right"} visible={this.state.yzmControl}>
                         <Input className={this.state.yzmControl?"inp-sty inp-warning":"inp-sty"} placeholder="请输入验证码" />
                     </Tooltip>
+                </div>
+                <div className="send-yzm">
+                    <button type="button" className="ant-btn ant-btn-primary ant-btn-lg btn-sty"><span>验证码</span></button> 
                 </div>
             </li>
             <li>
