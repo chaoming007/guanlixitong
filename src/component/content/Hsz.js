@@ -1,13 +1,13 @@
 /*
  * @Author: chaoming007@163.com 
- * @Date: 2018-05-19 11:17:56 
- * @Last Modified by:   chaoming007@163.com 
- * @Last Modified time: 2018-05-19 11:17:56 
+ * @Date: 2018-05-19 11:17:20 
+ * @Last Modified by: chaoming007@163.com
+ * @Last Modified time: 2018-05-22 14:15:21
  */
 import React,{ Component} from 'react'
 
 
-export default class Aqsz extends Component{
+export default class Ydfx extends Component{
     constructor(props) {
         super(props)
         
@@ -16,7 +16,7 @@ export default class Aqsz extends Component{
 
     render(){
         return <div>
-            安全设置
+            回收站
         </div>
     }
 

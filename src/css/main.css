@@ -6,14 +6,18 @@ address, caption, em, strong, th, var ,i{ font-style: normal; font-weight: norma
 ol, ul { list-style:none;}
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
 .clear { clear: both;  height: 0; overflow: hidden;}
-a:link, a:visited { color: #666666; text-decoration: none;}
+a:link, a:visited { color: #666666; text-decoration: none!important;}
 a:hover { color: #cc0000;  text-decoration: none; }
 
 /* header  */
 
 .header-box{ background: #ffffff; overflow: hidden; border-bottom: 1px solid #E0E0E0; margin: 0 0 30px; padding: 15px 30px}
 .header-box .logn-box{ float: left; height: 70px; line-height: 70px; font-size: 24px;}
-.header-box .login-set-box{ float: right; height: 70px; line-height: 70px; text-align: right; font-size: 14px}
+.header-box .login-set-box{ float: right; height: 70px; line-height: 70px; text-align: right; font-size: 14px; overflow: hidden;}
+.header-box .login-set-box img{ display: inline-block; border: 1px solid #E0E0E0; width: 50px; height: 50px; margin: 0; border-radius: 50%}
+.header-box .login-set-box span{font-size: 18px;display: inline-block; margin: 0; height: 70px; line-height: 70px; text-align: center;}
+.header-box .login-set-box .name{ color:  #666666; margin: 0 30px 0 10px}
+.header-box .login-set-box .exit,.header-box .login-set-box .exit a{ color: #E5675B}
 
 /* 内容 */
 .container{ overflow: hidden; margin: 0 30px 50px;}
@@ -21,12 +25,73 @@ a:hover { color: #cc0000;  text-decoration: none; }
 /* nav */
 .nav-box{ width: 235px; background: #ffffff; border:1px solid #E0E0E0; float: left; margin:0 20px 0 0; height: 800px;}
 .nav-box ul{ margin: 0}
-.nav-box li{ height: 55px; vertical-align: top; margin:0 0 10px}
+.nav-box li{ height: 55px; vertical-align:  top; margin:0 0 10px}
 .nav-box li a{ display: block; padding: 0 10px 0 50px; line-height: 55px; font-size: 16px; text-align: left}
 .nav-box li a.active,.nav-box li a:hover{ background:#E5675B; color: #ffffff }
 
 /* content */
-.content-box{margin: 0 0 0 255px; background: #ffffff; padding: 30px;border:1px solid #E0E0E0;}
+.content-box{margin: 0 0 0 255px; background: #ffffff; padding:20px 10px;border:1px solid #E0E0E0;}
+.content-box h2{ margin: 0; padding: 0 10px; height: 40px; line-height: 40px; color:#666666; background: #f5f4f4; font-size: 16px }
+
+/* 阅读分析 */
+.ydfx-box{ margin: 0; padding: 10px 0 0 0}
+.ydfx-box .p-msg{ line-height: 30px;}
+.yesterday-box{ border:1px solid #E0E0E0; margin: 0 0 50px}
+.yesterday-box h3{ height: 70px; margin: 0; line-height: 70px; padding: 0 10px;background: #f5f4f4; font-size: 16px; }
+.yesterday-box .txt-box{ padding: 25px; height: 170px}
+.yesterday-box .txt-box ul{overflow: hidden}
+.yesterday-box .txt-box li{ float: left; width: 25%; border-right: 1px solid #E0E0E0; text-align: center}
+.yesterday-box .txt-box li:last-child{ border: 0}
+.yesterday-box .txt-box span{ display: block}
+.yesterday-box .txt-box .s-tit{ line-height: 30px; font-size: 16px; color: #242424; margin: 0 0 40px}
+.yesterday-box .txt-box .s-num{line-height: 35px; font-size: 30px; color: #666666}
+
+.today-box{ margin: 0 0 50px; text-align: center; width: 100%;}
+.today-box th{background: #f5f4f4; height: 50px; font-size: 18px; line-height: 50px;}
+.today-box tr td{border-bottom: 1px solid #E0E0E0;line-height: 80px; height: 80px}
+.char-box{ height:300px;}
+
+/* 我的创作 */
+.search-box{border:1px solid #E0E0E0; margin: 30px 0 50px}
+.search-box h3{ height: 70px; margin: 0; line-height: 70px; padding: 0 10px;background: #f5f4f4; font-size: 16px; }
+.search-box .search-content{ padding:30px 20px;}
+.search-box .search-content .s-box{ overflow: hidden; margin: 0 0 30px}
+.search-box .search-content .tit{ display: inline-block; line-height: 40px; font-size: 16px; font-weight: bold; margin: 0 10px 0 0}
+.search-box .search-content .search-sty{ width: 300px; height: 40px;line-height: 40px}
+.search-box .search-content .select-sty{ width: 100px;height: 40px; line-height: 40px }
+.search-box .search-content .page-sty{ width: 80px; height: 40px;}
+
+.search-box .search-content .tit-span{ margin-left:30px}
+.search-box .search-content .s-btn{ margin: 0}
+.search-box .search-content .s-btn .btn-sty{ width: 120px; height: 40px;}
+
+.list-box{ margin: 0 auto}
+.list-box h3{ height: 70px; margin: 0; line-height: 70px; padding: 0 10px;background: #f5f4f4; font-size: 16px; }
+.list-box .ul-box{ margin: 0}
+.list-box .ul-box li{ text-align: center; overflow: hidden; padding: 20px 0;border-bottom: 1px solid #e4e4e4}
+.list-box .ul-box .tit-li{ font-weight: bold; font-size: 16px; border-bottom: 2px solid #e1e1e1; padding: 0}
+.list-box .ul-box span{ display: block; float: left; height: 120px; line-height: 120px}
+.list-box .ul-box .tit-li span{height: 80px; line-height: 80px}
+.list-box .ul-box .s-id{ width: 5%;}
+.list-box .ul-box .s-tit{ width: 35%;}
+.list-box .ul-box .s-img{ width: 30%; display: table; vertical-align: middle}
+.list-box .ul-box .s-status{ width: 10%;}
+.list-box .ul-box .s-type{ width: 10%;}
+.list-box .ul-box .s-operation{ width: 10%; vertical-align: middle}
+.list-box .ul-box  a.fb-link{ color: #cc0000; padding:0 10px }
+.list-box .ul-box  a.yl-link{ color:#3D90F7;}
+.page-box{ text-align: center; padding: 60px 0 40px}
+
+/* 账号设置 */
+.account-box{ margin: 0 auto; padding: 40px 0}
+.account-box li{ overflow: hidden; margin: 0 0 30px}
+.account-box .tit{ display: block; width: 200px; font-weight: bold; float: left; height: 40px; text-align: right; line-height: 40px;}
+.account-box .inp-warp{ float: left; height: 40px; }
+.account-box .username-box{line-height: 40px;height: 40px; width: 300px; display: block}
+.account-box .inp-sty{ vertical-align: middle;height: 40px; width: 300px; display: block}
+.account-box .inp-warning{ border: 1px solid #cc0000}
+.account-box .btn-box{ overflow: hidden;}
+.account-box .btn-box .btn-sty{ width: 200px; margin: 0 20px 0 0}
 
 /* footer */
 .footer-box{ background: #333333; height: 50px; line-height: 50px; text-align: center; color: #999999}
@@ -34,3 +99,25 @@ a:hover { color: #cc0000;  text-decoration: none; }
 /* load */
 .load-box{ margin: 0 auto; padding: 30px 0; text-align: center}
 .load-box>div{ margin: 0 auto}
+
+/* login  */
+.login-box{ border:1px solid #3D90F7; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);  width: 500px; padding: 20px 20px 10px; border-radius: 3px; margin: -150px auto 0 }
+.login-box h2{background: rgb(245, 245, 245); line-height: 40px; font-size: 18px; font-weight: 800;  padding: 0 10px}
+.login-box .inp-warp{ padding: 20px 10px}
+.login-box .inp-box{ overflow: hidden; margin: 0 0 30px}
+.login-box .inp-sty{ height: 40px; line-height: 40px}
+.login-box .inp-box span{ float: left; display: block; line-height: 30px; text-align: right }
+.login-box .btn-box{  overflow: hidden;}
+.login-box .btn-box .btn-sty{ height: 50px; font-size: 18px; width: 100%;}
+.login-box .btn-box .forgetPassword{ text-align: right; line-height: 50px; float: right;}
+
+
+
+
+
+
+
+
+
+
+
